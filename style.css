@@ -15,7 +15,7 @@
   font-weight: bold; /* Met le texte en gras */
   text-shadow: 2px 2px 10px rgba(255, 105, 180, 0.7); /* Ajoute un effet de lueur */
   animation: fadeIn 3s ease-in-out; /* Animation d'apparition douce */
-  font-family: 'Times New Roman', Times, serif; /* Police Times New Roman */
+  font-family: 'ALGERIAN', Times, serif; /* Police Times New Roman */
 }
 
 /* Animation pour faire apparaître doucement le texte */
