@@ -315,5 +315,36 @@
       </div>
     </div>
   </div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+	<script>
+        function launchFireworks() {
+            var duration = 1 * 200;
+            var end = Date.now() + duration;
+
+            (function frame() {
+                confetti({
+                    particleCount: 3,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 }
+                });
+                confetti({
+                    particleCount: 3,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 }
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            }());
+        }
+            launchFireworks();
+        }
+
+        // Lancer les feux d'artifice après un court délai pour que la page se charge
+        setTimeout(launchFireworks, 200);
+    </script>
 </body>
 </html>
